@@ -52,16 +52,16 @@ const Projects = () => {
             <h1>Work / Projects</h1>
             
         
-            <div className='flex gap-5 w-full sm:w-2/3 flex-wrap justify-start text-start ' >
+            <div className='flex gap-5 w-full sm:w-2/3 flex-wrap justify-center text-start ' >
                 {
 
                     projects.map((project , idx) => (
-                        <Card key={idx} className="w-md my-5 px-5">
+                        <Card key={idx} className="sm:w-md max-w-sm my-5 px-2 ">
                             <CardHeader>
                                 <CardTitle>{project.title}</CardTitle>
                             </CardHeader>
-                            <CardDescription>{project.description}</CardDescription>
-                            <CardContent className="flex gap-2">
+                            <CardDescription className="text-wrap">{project.description}</CardDescription>
+                            <CardContent className="flex gap-2 flex-wrap">
                                 {project.techStack.map((tech , idx) => (
                                     <Button key={idx} variant="outline" size="sm">{tech}</Button>
                                 ))}

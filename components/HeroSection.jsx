@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center text-center min-h-[80%] px-4 py-20">
+    <section className="flex flex-col items-center justify- text-center sm:min-h-screen px-4 pt-32 sm:pt-40">
       {/* Avatar */}
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
@@ -14,7 +14,7 @@ export default function HeroSection() {
         transition={{ duration: 0.5 }}
       >
         <Avatar className="h-20 w-20 mb-6">
-          <AvatarImage src="/avatar.jpg" alt="Fardeen" />
+          <AvatarImage src="/avatar.jpg" alt="logo" />
           <AvatarFallback>FM</AvatarFallback>
         </Avatar>
       </motion.div>
@@ -45,10 +45,6 @@ export default function HeroSection() {
         </Button>
       </div>
 
-      {/* Optional tagline */}
-      {/* <p className="mt-6 text-sm text-muted-foreground">
-        If you’re working on something real, let’s talk.
-      </p> */}
     </section>
   );
 }

@@ -18,7 +18,7 @@ export const Contact = () => {
                 <Label htmlfor="email">Message</Label>
                 <Textarea className="border-black border-[1px] " />
             </div>
-            <Button>Submit</Button>
+            <Button className="w-full">Submit</Button>
         </div>
     </section>
   )
