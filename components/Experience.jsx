@@ -1,35 +1,11 @@
 import React from 'react'
 import { Card, CardContent } from './ui/card';
 import Image from 'next/image';
-
+import { imgs } from '@/app/data';
+import { experiences } from '@/app/data';
 export const Experience = () => {
 
-    const experiences = [
-        {
-            logo: "/public/next.svg",
-            title: "Full Stack Intern",
-            company: "Infosys Springboard",
-            duration: "Aug 2025 – Oct 2025",
-        },
-        {
-            logo: "/logos/adobe.png",
-            title: "MERN Stack Intern",
-            company: "UptoSkills ",
-            duration: "Jan 2025 – Apr 2025",
-        },
-        // {
-        //     logo: "/logos/freelance.png",
-        //     title: "Freelance",
-        //     company: "Building full stack apps",
-        //     duration: "2024 – Early 2025",
-        // },
-        // {
-        //     logo: "/logos/stealth.png",
-        //     title: "Full Stack Development – TA",
-        //     company: "Stealth Startup",
-        //     duration: "Feb 2024 – June 2024",
-        // },
-    ];
+
 
     return (
         <section className='flex flex-col items-center'>

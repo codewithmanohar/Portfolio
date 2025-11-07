@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardContent } from './ui/card'
 import Image from 'next/image'
-import logo from "../public/next.svg"
+import { imgs } from '@/app/data'
 
 export const Education = () => {
     return (
@@ -12,10 +12,10 @@ export const Education = () => {
                     <CardContent className="flex items-center gap-5 p-0">
                         <div className="w-10 h-10 relative rounded-full overflow-hidden ">
                             <Image
-                                src={logo}
+                                src={imgs.sandip_university}
                                 alt='logo'
                                 fill
-                                className="fill"
+                                className="object-cover"
                             />
                         </div>
                         <div>

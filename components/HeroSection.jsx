@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
-
+import { imgs } from "@/app/data";
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center justify- text-center sm:min-h-screen px-4 py-32 sm:py-0 sm:pt-40">
@@ -14,8 +14,8 @@ export default function HeroSection() {
         transition={{ duration: 0.5 }}
       >
         <Avatar className="h-20 w-20 mb-6">
-          <AvatarImage src="/avatar.jpg" alt="logo" />
-          <AvatarFallback>FM</AvatarFallback>
+          <AvatarImage src='/profile.jpg' alt="logo" />
+          <AvatarFallback>MK</AvatarFallback>
         </Avatar>
       </motion.div>
 
@@ -34,14 +34,14 @@ export default function HeroSection() {
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 mt-8">
         <Button className="px-6 py-2 rounded-full" asChild>
-          <a href="#">Book a meet</a>
+          <a href="#">Resume</a>
         </Button>
         <Button
           variant="secondary"
           className="px-6 py-2 rounded-full"
           asChild
         >
-          <a href="#">Get in touch</a>
+          <a href="#contact">Get in touch</a>
         </Button>
       </div>
 

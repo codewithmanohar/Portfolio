@@ -128,3 +128,7 @@
     @apply text-3xl font-bold text-center text-gray-800 py-10 dark:text-white tracking-tight ;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

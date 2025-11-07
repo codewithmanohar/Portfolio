@@ -7,7 +7,7 @@ import { Button } from './ui/button'
 
 export const Contact = () => {
   return (
-    <section className='flex flex-col items-center justify-center text-center px-4 py-20'>
+    <section id='contact' className='flex flex-col items-center justify-center text-center px-4 py-20'>
         <h2 className='title'>Contact Me 😊</h2>
         <div className='w-full max-w-2xl space-y-6 py-10'>
             <div className='flex flex-col gap-3 items-start'>

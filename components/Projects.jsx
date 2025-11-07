@@ -35,7 +35,7 @@ const Projects = () => {
                                     width={50}
                                     height={50}
                                     alt='logo' 
-                                    src={imgs.next_logo} 
+                                    src={project.icon} 
                                 />
                                 <CardTitle className="px-0">{project.title}</CardTitle>
                             </CardHeader>

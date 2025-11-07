@@ -8,9 +8,10 @@ export const Skills = () => {
   return (
     <section className="py-10 flex flex-col items-center  ">
       <h2 className="title">Skills</h2>
-      <div className="flex flex-wrap justify-center gap-3 max-w-xl ">
+      <div className="flex flex-wrap justify-start sm:justify-center gap-3 max-w-xl ">
         {skills.map((skill, index) => (
           <Button key={index} variant="outline" size="sm">
+            {skill.icon}
             {skill.name}
           </Button>
         ))}
