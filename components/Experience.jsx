@@ -18,7 +18,7 @@ export const Experience = () => {
                     <Card
                         key={idx}
                         className="flex flex-row items-center justify-start w-full p-4 hover:bg-muted transition rounded-xl">
-                            <div className="w-10 h-10 relative rounded-full overflow-hidden">
+                            <div className="w-10 h-10 relative rounded-full overflow-hidden flex-shrink-0">
                                 <Image
                                     src={exp.logo}
                                     alt={exp.company}

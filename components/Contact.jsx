@@ -55,7 +55,7 @@ export const Contact = () => {
                   className="border-black border-[1px] rounded-sm "  
                   id="message" />
             </div>
-            <Button className="w-full">Submit</Button>
+            <Button className="w-full">Send message</Button>
         </form>
     </section>
   )

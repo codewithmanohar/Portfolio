@@ -1,5 +1,5 @@
 import next_logo from "../public/next.svg";
-import { FaCss3, FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaCss3, FaGit, FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiPostman } from "react-icons/si";
@@ -20,6 +20,7 @@ import infosys from "../public/infosys_logo.png";
 import sandip_university from "../public/university_logo.jpg";
 import uptoskills_logo from "../public/uptoskills_logo.jpeg";
 import profile from "../public/profile.jpg";
+// import {FaAws }
 
 export const imgs = {
     profile, 
@@ -40,18 +41,6 @@ export const experiences = [
             company: "UptoSkills ",
             duration: "Jan 2025 – Apr 2025",
         },
-        // {
-        //     logo: "/logos/freelance.png",
-        //     title: "Freelance",
-        //     company: "Building full stack apps",
-        //     duration: "2024 – Early 2025",
-        // },
-        // {
-        //     logo: "/logos/stealth.png",
-        //     title: "Full Stack Development – TA",
-        //     company: "Stealth Startup",
-        //     duration: "Feb 2024 – June 2024",
-        // },
     ];
 
 export const projects = [
@@ -78,7 +67,7 @@ export const projects = [
     description:
       "An AI-powered quiz app that generates programming questions based on selected language and difficulty, with a 30-second timer.",
     techStack: ["React", "Google Gemini", "Tailwind CSS", "Node.js" , "Express.js" ,  ],
-    website: "https://quizforge-demo.vercel.app",
+    website: "https://ai-code-reviwer.onrender.com/",
     code: "https://github.com/codewithmanohar/AI_Quiz",
     icon : ai_quiz 
   },
@@ -87,7 +76,7 @@ export const projects = [
     description:
       "An AI-driven code review tool that analyzes user-submitted code and returns refined, optimized, and corrected code suggestions.",
     techStack: ["React", "Node.js", "Express.js", "Prisma", "Zustand", "Google Gemini" , "react-markdown" , "react-toastify", "rehype-highlight" , "Daisy UI" ],
-    website: "https://codesense-demo.vercel.app",
+    website: "https://ai-code-reviwer.onrender.com",
     code: "https://github.com/codewithmanohar/AI-Code-Reviwer",
     icon : ai_codeReviewer 
   },
@@ -101,18 +90,21 @@ export const skills = [
     { name: "Next.js", icon : <RiNextjsFill />},
     { name: "Tailwind CSS" , icon : < RiTailwindCssFill /> },
     { name: "Node.js" , icon :  <FaNodeJs />},
+    { name: "CSS" , icon : <FaCss3 />},
     { name: "Express.js", icon : <SiExpress /> },
     { name: "MongoDB", icon : <DiMongodb /> },
+    { name: "Git " ,icon : <FaGitAlt />},
     { name: "Shadcn UI" , icon : <SiShadcnui /> },
     { name: "GitHub" , icon : <FaGithub /> },
     { name: "Docker" , icon : <FaDocker /> },
     { name: "HTML" , icon : <FaHtml5 />},
-    { name: "Git " ,icon : <FaGitAlt />},
     { name: "Vercel " , icon : <IoLogoVercel /> },
-    { name: "CSS" , icon : <FaCss3 />},
   { name: "Zustand ", icon : <FaCss3 />},
   { name: "Postman ", icon : <SiPostman />},
   { name: "Daisy UI" , icon : <FaCss3 />},
-  { name: "Cloudinary", icon : <SiCloudinary />},
+  { name: "AWS" , icon : <FaAws />},
   { name: "Figma" , icon : <FaFigma /> },
+  { name: "Cloudinary", icon : <SiCloudinary />},
+  // { name: "Git" , icon : <FaGit />},
+
 ];
