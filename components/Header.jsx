@@ -9,6 +9,7 @@ import {
 import { CodeXml, Github, Home, User } from 'lucide-react';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
+import { RiCodeSSlashFill } from "react-icons/ri";
 
 
 
@@ -28,7 +29,7 @@ const Header = () => {
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
                             <a href="/project">
-                                <CodeXml className="w-5 h-5 sm:w-6 sm:h-6" />
+                                <RiCodeSSlashFill className="w-5 h-5 sm:w-6 sm:h-6" />
                             </a>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
@@ -43,10 +44,10 @@ const Header = () => {
 
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
-                            <a href="https://github.com/codewithmanohar" target='_blank' rel='noopener norefferer' >
+                            <a href="https://github.com/codewithmanohar" target='_blank' rel="noopener noreferrer" >
                                 <Github className="w-5 h-5 sm:w-6 sm:h-6" />
                             </a>
-                        </NavigationMenuLink>
+                        </NavigationMenuLink>   
                     </NavigationMenuItem>
 
                     <NavigationMenuItem>
