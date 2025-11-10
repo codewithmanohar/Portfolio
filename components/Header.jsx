@@ -10,6 +10,7 @@ import { CodeXml, Github, Home, User } from 'lucide-react';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import { RiCodeSSlashFill } from "react-icons/ri";
+import Link from 'next/link';
 
 
 
@@ -20,27 +21,27 @@ const Header = () => {
                 <NavigationMenuList className="flex gap-4">
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
-                            <a href="/">
+                            <Link href="/">
                                 <Home className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </a>
+                            </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     
                     
 
-                    {/* <NavigationMenuItem>
+                    <NavigationMenuItem>
                         <NavigationMenuLink asChild>
-                            <a href="/project">
+                            <Link href="/project">
                                 <RiCodeSSlashFill className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </a>
+                            </Link>
                         </NavigationMenuLink>
-                    </NavigationMenuItem> */}
+                    </NavigationMenuItem>
 
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
-                            <a href="/profile">
+                            <Link href="/profile">
                                 <User className="w-5 h-5 sm:w-6 sm:h-6" />
-                            </a>
+                            </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
 
