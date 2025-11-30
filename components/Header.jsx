@@ -32,7 +32,8 @@ const Header = () => {
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
                             <Link href="/project">
-                                <RiCodeSSlashFill className="w-5 h-5 sm:w-6 sm:h-6" />
+                                <RiCodeSSlashFill className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
+
                             </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
