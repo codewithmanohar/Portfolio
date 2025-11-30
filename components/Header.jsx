@@ -4,6 +4,7 @@ import {
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
+    NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
 import { CodeXml, Github, Home, User } from 'lucide-react';
@@ -75,6 +76,8 @@ const Header = () => {
                         <ThemeToggleButton />
                     </NavigationMenuItem>
                 </NavigationMenuList>
+
+                <NavigationMenuViewport />
             </NavigationMenu>
         </div>
 
