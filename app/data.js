@@ -19,7 +19,7 @@ import ai_codeReviewer from "../public/code-review.png";
 import infosys from "../public/infosys_logo.png";
 import sandip_university from "../public/university_logo.jpg";
 import uptoskills_logo from "../public/uptoskills_logo.jpeg";
-import profile from "../public/profile.jpg";
+import profile from "../public/profile.jpeg";
 // import {FaAws }
 
 export const imgs = {
@@ -49,7 +49,7 @@ export const projects = [
     description:
       "A full-stack web platform enabling citizens to report issues, submit feedback, and interact with local authorities seamlessly.",
     techStack: ["React", "Node.js", "MongoDB" , "Express.js", "react-toastify", "tailwind css" , "chart.js", "jspdf" , "framer motion", "papaparse" , "nodemailer"],
-    website: "https://civix-yjhv.onrender.com/",
+    website: "https://civixs.vercel.app/",
     code: "https://github.com/codewithmanohar/Civix-Citizen-Engagement-Dashboard",
     icon : civic_logo 
   },
@@ -58,8 +58,8 @@ export const projects = [
     description:
       "A real-time messaging app with secure authentication, private chats, typing indicators, and persistent chat history.",
     techStack: ["React", "Daisy UI", "Node.js", "Socket.io" , "Express.js" , "MongoDB" , "React-toast", "Cloudinary"],
-    website: "https://full-stack-chat-application-6kfg.onrender.com",
-    code: "https://github.com/codewithmanohar/Full-Stack-Chat-Application",
+    website: "https://trychatflow.vercel.app",
+    code: "https://github.com/codewithmanohar/ChatFlow",
     icon : chat_logo 
   },
   {
@@ -67,8 +67,8 @@ export const projects = [
     description:
       "An AI-powered quiz app that generates programming questions based on selected language and difficulty, with a 30-second timer.",
     techStack: ["React", "Google Gemini", "Tailwind CSS", "Node.js" , "Express.js" ,  ],
-    website: "https://ai-code-reviwer.onrender.com/",
-    code: "https://github.com/codewithmanohar/AI_Quiz",
+    website: "https://ai-quizforge.vercel.app/",
+    code: "https://github.com/codewithmanohar/QuizForge",
     icon : ai_quiz 
   },
   {
@@ -76,8 +76,8 @@ export const projects = [
     description:
       "An AI-driven code review tool that analyzes user-submitted code and returns refined, optimized, and corrected code suggestions.",
     techStack: ["React", "Node.js", "Express.js", "Prisma", "Zustand", "Google Gemini" , "react-markdown" , "react-toastify", "rehype-highlight" , "Daisy UI" ],
-    website: "https://ai-code-reviwer.onrender.com",
-    code: "https://github.com/codewithmanohar/AI-Code-Reviwer",
+    website: "https://code-sence.vercel.app/",
+    code: "https://github.com/codewithmanohar/CodeSence",
     icon : ai_codeReviewer 
   },
   

@@ -14,7 +14,7 @@ export default function HeroSection() {
         transition={{ duration: 0.5 }}
       >
         <Avatar className="h-20 w-20 mb-6">
-          <AvatarImage src='/profile.jpg' alt="logo" />
+          <AvatarImage className="bg-" src='/profile.jpeg' alt="logo" />
           <AvatarFallback>MK</AvatarFallback>
         </Avatar>
       </motion.div>
@@ -26,7 +26,7 @@ export default function HeroSection() {
 
       {/* Subtitle */}
       <p className="max-w-xl mt-4 text-muted-foreground text-sm sm:text-base">
-        A developer driven by curiosity and clarity. I learn fast, adapt quickly, and build with intention. Code is where I explore, refine, and push for better. Shaped by books, conversations, and the habit of questioning things. Always growing. Always moving forward.
+        Curious developer who learns fast, adapts quickly, and builds with purpose. Working with Next.js and the MERN stack, passionate about web development.
       </p>
 
       {/* CTA Buttons */}
