@@ -55,10 +55,10 @@ export const projects = [
     icon: cookify_logo,
   },
     {
-    title: "Civix – Citizen Engagement Dashboard",
+    title: "Civix – Citizen Engagement ",
     description:
       "A full-stack web platform enabling citizens to report issues, submit feedback, and interact with local authorities seamlessly.",
-    techStack: ["React","jspdf", "MongoDB", "Express.js", "chart.js",  "framer motion", "papaparse", "nodemailer"],
+    techStack: ["React","jspdf", "MongoDB", "Express.js", "chart.js",  "framer motion","nodemailer"],
     website: "https://civixs.vercel.app/",
     code: "https://github.com/codewithmanohar/Civix-Citizen-Engagement-Dashboard",
     icon: civic_logo
@@ -67,7 +67,7 @@ export const projects = [
     title: "ChatFlow – Real-Time Chat Application",
     description:
       "A real-time messaging app with secure authentication, private chats, typing indicators, and persistent chat history.",
-    techStack: ["React", "Daisy UI", "Node.js", "Socket.io", "Express.js", "MongoDB", "React-toast", "Cloudinary"],
+    techStack: ["React", "Daisy UI", "Node.js", "Socket.io", "Express.js", "MongoDB", "Cloudinary"],
     website: "https://trychatflow.vercel.app",
     code: "https://github.com/codewithmanohar/ChatFlow",
     icon: chat_logo
