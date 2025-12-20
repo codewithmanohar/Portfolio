@@ -20,43 +20,56 @@ const Projects = () => {
     return (
         <section className='flex flex-col items-center justify-center text-center min-h-[80%] px-4 pb-20'>
             <h1 className='title '>Projects</h1>
-            
-        
-            <div className='flex gap-5 w-full sm:w-2/3 flex-wrap justify-center text-start ' >
-                {
 
-                    projects.map((project , idx) => (
-                        <Card key={idx} className="sm:w-[48%] max-w-sm my-5 px-5 bg-background ">
-                            <CardHeader className="flex flex-col ">
-                                <Image 
-                                    className='p-2 '
-                                    width={50}
-                                    height={50}
-                                    alt='logo' 
-                                    src={project.icon} 
-                                />
-                                <CardTitle className="px-0 tracking-tight">{project.title}</CardTitle>
-                            </CardHeader>
 
-                            <CardDescription className="text-wrap text-start ml-6 ">{project.description}</CardDescription>
-                            <CardContent className="flex gap-2 flex-wrap">
-                                {project.techStack.map((tech , idx) => (
-                                    <Button key={idx} variant="skills" size="smbt">{tech}</Button>
-                                ))}
-                            </CardContent>
+           <div className="grid w-full sm:w-9/12 grid-cols-1 sm:grid-cols-2 gap-5">
+                {projects.map((project, idx) => (
+                    <Card
+                        key={idx}
+                        className="flex flex-col h-full min-h-[350px] px-5 bg-background"
+                    >
+                        <CardHeader className="flex flex-col">
+                            <Image
+                                className="p-2"
+                                width={project?.w || 50}
+                                height={project?.h || 50}
+                                alt="logo"
+                                src={project.icon}
+                            />
+                            <CardTitle className="tracking-tight">
+                                {project.title}
+                            </CardTitle>
+                        </CardHeader>
 
-                            <CardFooter className="flex gap-2 bottom-5 left-5" >
-                                <Button size="smbt1" variant="default" asChild>
-                                    <a href={project.website} target='_blank'><TbWorld className='size-4'/> Website</a>
+                        <CardDescription className="text-start px-6">
+                            {project.description}
+                        </CardDescription>
+
+                        <CardContent className="flex flex-wrap gap-1">
+                            {project.techStack.map((tech, idx) => (
+                                <Button key={idx} variant="skills" size="smbt">
+                                    {tech}
                                 </Button>
-                                <Button size="smbt1" variant="default" asChild>
-                                    <a href={project.code} target='_blank'><FaGithub /> Source</a>
-                                </Button>
-                            </CardFooter>
-                        </Card>
-                    ))
-                }
-                
+                            ))}
+                        </CardContent>
+
+                        {/* Push footer to bottom */}
+                        <CardFooter className="mt-auto flex gap-2">
+                            <Button size="smbt1" variant="default" asChild>
+                                <a href={project.website} target="_blank">
+                                    <TbWorld className="size-4" /> Website
+                                </a>
+                            </Button>
+                            <Button size="smbt1" variant="default" asChild>
+                                <a href={project.code} target="_blank">
+                                    <FaGithub /> Source
+                                </a>
+                            </Button>
+                        </CardFooter>
+                    </Card>
+                ))}
+
+
             </div>
 
         </section>
