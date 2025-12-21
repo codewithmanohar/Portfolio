@@ -1,19 +1,20 @@
 import React from 'react'
 import { Card, CardContent } from './ui/card';
 import Image from 'next/image';
+import { certification, imgs } from '@/app/data';
 import { experiences } from '@/app/data';
-export const Experience = () => {
+export const Certification = () => {
 
 
 
     return (
         <section className='flex flex-col items-center'>
-            <h1 className='title'>Experience</h1>
+            <h1 className='title'>Certification</h1>
 
             <div className="w-full max-w-2xl space-y-6">
 
             {
-                experiences.map((exp, idx) => (
+                certification.map((exp, idx) => (
                     <Card
                         key={idx}
                         className="flex flex-row items-center justify-start w-full p-4 hover:bg-muted transition rounded-xl">

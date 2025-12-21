@@ -21,6 +21,9 @@ import sandip_university from "../public/university_logo.jpg";
 import uptoskills_logo from "../public/uptoskills_logo.jpeg";
 import profile from "../public/profile.jpeg";
 import cookify_logo from "../public/cookify.png"
+import nptel_logo from "../public/nptel_logo.png"
+import letUpgrade from "../public/lets_upgrade.png" 
+
 // import {FaAws }
 
 export const imgs = {
@@ -41,6 +44,23 @@ export const experiences = [
     title: "MERN Stack Intern",
     company: "UptoSkills ",
     duration: "Jan 2025 – Apr 2025",
+  },
+];
+
+export const certification = [
+  {
+    logo: nptel_logo,
+    title: "Cloud Computing",
+    company: "NPTEL",
+    duration: "Apr 2025",
+    link: "www.google.com"
+  },
+  {
+    logo: letUpgrade,
+    title: "Chat GPT Bootcamp",
+    company: "Lets Upgrade",
+    duration: "June 2025",
+    link: "www.google.com"
   },
 ];
 

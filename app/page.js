@@ -1,3 +1,4 @@
+import { Certification } from "@/components/Certification";
 import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
@@ -17,6 +18,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Skills />
+      <Certification />
       <Education />
       <Contact /> 
       <Footer />
