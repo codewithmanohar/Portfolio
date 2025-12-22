@@ -23,12 +23,14 @@ import profile from "../public/profile.jpeg";
 import cookify_logo from "../public/cookify.png"
 import nptel_logo from "../public/nptel_logo.png"
 import letUpgrade from "../public/lets_upgrade.png" 
+import nptel from "../public/certificate1.jpg"
+import chatgpt from "../public/certificate2.jpg"
 
 // import {FaAws }
 
 export const imgs = {
   profile,
-  sandip_university
+  sandip_university,
 }
 
 
@@ -53,14 +55,14 @@ export const certification = [
     title: "Cloud Computing",
     company: "NPTEL",
     duration: "Apr 2025",
-    link: "www.google.com"
+    link: nptel
   },
   {
     logo: letUpgrade,
     title: "Chat GPT Bootcamp",
     company: "Lets Upgrade",
     duration: "June 2025",
-    link: "www.google.com"
+    link: chatgpt
   },
 ];
 
