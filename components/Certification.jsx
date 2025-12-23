@@ -35,7 +35,9 @@ export const Certification = () => {
                                 </div>
                                 <div className='flex items-end flex-col '>
                                     <p className="text-[12px] sm:text-sm  text-muted-foreground">{certificate.duration}</p>
-                                    <ViewCertificate certificate={certificate.link} />
+                                    <div className='sm:block hidden'>
+                                    <ViewCertificate  certificate={certificate.link} />
+                                    </div>
                                 </div>
                                 
                             </CardContent>

@@ -25,14 +25,13 @@ import nptel_logo from "../public/nptel_logo.png"
 import letUpgrade from "../public/lets_upgrade.png" 
 import nptel from "../public/certificate1.jpg"
 import chatgpt from "../public/certificate2.jpg"
-
-// import {FaAws }
+import infosys_certificate from "../public/certificate_infosys.jpg"
+import uptoskills from "../public/certificate_uptoskills.jpg"
 
 export const imgs = {
   profile,
   sandip_university,
 }
-
 
 export const experiences = [
   {
@@ -40,12 +39,14 @@ export const experiences = [
     title: "Full Stack Intern",
     company: "Infosys Springboard",
     duration: "Aug 2025 – Oct 2025",
+    link: infosys_certificate
   },
   {
     logo: uptoskills_logo,
     title: "MERN Stack Intern",
     company: "UptoSkills ",
     duration: "Jan 2025 – Apr 2025",
+    link: uptoskills
   },
 ];
 
@@ -114,7 +115,6 @@ export const projects = [
   },
 
 ];
-
 
 export const skills = [
   { name: "React.js", icon: <FaReact /> },
