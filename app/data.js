@@ -19,7 +19,7 @@ import ai_codeReviewer from "../public/code-review.png";
 import infosys from "../public/infosys_logo.png";
 import sandip_university from "../public/university_logo.jpg";
 import uptoskills_logo from "../public/uptoskills_logo.jpeg";
-import profile from "../public/profile.jpeg";
+import profile from "../public/profile.webp";
 import cookify_logo from "../public/cookify.png"
 import nptel_logo from "../public/nptel_logo.png"
 import letUpgrade from "../public/lets_upgrade.png" 
@@ -87,7 +87,7 @@ export const projects = [
     icon: civic_logo
   },
   {
-    title: "ChatFlow – Real-Time Chat Application",
+    title: "ChatFlow – Chat Application",
     description:
       "A real-time messaging app with secure authentication, private chats, typing indicators, and persistent chat history.",
     techStack: ["React", "Daisy UI", "Node.js", "Socket.io", "Express.js", "MongoDB", "Cloudinary"],
