@@ -13,7 +13,7 @@ export default function HeroSection() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Avatar className="h-40 w-40 mb-6">
+        <Avatar className="h-40 w-40 mb-6  border-3 dark:border-white border-gray-900 ">
           <AvatarImage className="bg-" src='/profile.webp' alt="logo" />
           <AvatarFallback>MK</AvatarFallback>
         </Avatar>

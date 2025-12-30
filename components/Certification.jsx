@@ -26,8 +26,11 @@ export const Certification = () => {
                                     className="object-cover"
                                 />
                             </div>
-                            <CardContent className="flex items-start sm:justify-between w-full flex-col sm:flex-row gap-0 sm:gap-4 p-0  sm:text-lg text-sm">
+                            <CardContent className="flex relative items-start sm:justify-between w-full flex-col sm:flex-row gap-0 sm:gap-4 p-0  sm:text-lg text-sm">
 
+                                <div className=' absolute  sm:top-8 top-9  right-0'>
+                                    <ViewCertificate certificate={certificate.link} />
+                                </div>
 
                                 <div>
                                     <h3 className="font-semibold">{certificate.title}</h3>
@@ -35,11 +38,8 @@ export const Certification = () => {
                                 </div>
                                 <div className='flex items-end flex-col '>
                                     <p className="text-[12px] sm:text-sm  text-muted-foreground">{certificate.duration}</p>
-                                    <div className='sm:block hidden'>
-                                    <ViewCertificate  certificate={certificate.link} />
-                                    </div>
                                 </div>
-                                
+
                             </CardContent>
                         </Card>
                     ))

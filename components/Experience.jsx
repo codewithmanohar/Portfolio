@@ -26,8 +26,10 @@ export const Experience = () => {
                                     className="object-cover"
                                 />
                             </div>
-                            <CardContent className="flex items-start sm:justify-between w-full flex-col sm:flex-row gap-0 sm:gap-4 p-0  sm:text-lg text-sm">
-
+                            <CardContent className="flex relative items-start sm:justify-between w-full flex-col sm:flex-row gap-0 sm:gap-4 p-0  sm:text-lg text-sm">
+                                 <div className=' absolute  sm:top-8 top-9  right-0'>
+                                        <ViewCertificate certificate={exp.link} />
+                                    </div>
 
                                 <div>
                                     <h3 className="font-semibold">{exp.title}</h3>
@@ -36,9 +38,7 @@ export const Experience = () => {
                                 <div className='flex flex-col items-end '>
 
                                     <p className="text-[12px] sm:text-sm  text-muted-foreground">{exp.duration}</p>
-                                    <div className='sm:block hidden'>
-                                        <ViewCertificate certificate={exp.link} />
-                                    </div>
+                                   
                                 </div>
                             </CardContent>
                         </Card>
