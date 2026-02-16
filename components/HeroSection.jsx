@@ -32,7 +32,7 @@ export default function HeroSection() {
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 mt-8">
         <Button className="px-6 py-2 rounded-full" asChild>
-          <a href="https://drive.google.com/file/d/1GkEbY6S5Z6XGbl0yxdNqmYuAbWNM9dEt/view?usp=sharing" target="_blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1-QXcn6B4VtI3gnSVobSBuAGahwVIz5pb/view?usp=sharing" target="_blank">Resume</a>
         </Button>
         <Button
           variant="secondary"

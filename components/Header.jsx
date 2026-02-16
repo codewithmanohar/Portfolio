@@ -7,10 +7,9 @@ import {
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
-import { CodeXml, Github, Home, User } from 'lucide-react';
+import { Code2, CodeXml, Github, Home, User } from 'lucide-react';
 import { ThemeToggleButton } from './ThemeToggleButton';
 import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
-import { RiCodeSSlashFill } from "react-icons/ri";
 import Link from 'next/link';
 
 
@@ -33,7 +32,7 @@ const Header = () => {
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
                             <Link href="/project">
-                                <RiCodeSSlashFill className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
+                                <Code2 className="w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
 
                             </Link>
                         </NavigationMenuLink>
@@ -42,7 +41,7 @@ const Header = () => {
                     <NavigationMenuItem>
                         <NavigationMenuLink asChild>
                             <Link href="/profile">
-                                <User className="w-5 h-5 sm:w-6 sm:h-6" />
+                                <User className="w-5 h-5 sm:w-6 sm:h-6 " />
                             </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>

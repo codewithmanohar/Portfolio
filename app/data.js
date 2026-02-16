@@ -1,5 +1,5 @@
 import next_logo from "../public/next.svg";
-import { FaAws, FaCss3, FaGit, FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaCss3, FaGit, FaGitAlt, FaGithub, FaLinux, FaNodeJs, FaReact } from "react-icons/fa";
 import { FaDocker } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiPostman } from "react-icons/si";
@@ -11,7 +11,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
+import { DiMongodb, DiPostgresql } from "react-icons/di";
 import civic_logo from "../public/civil-liberties.png";
 import chat_logo from "../public/chat.png";
 import ai_quiz from "../public/answer.png";
@@ -135,8 +135,9 @@ export const skills = [
   { name: "Postman ", icon: <SiPostman /> },
   { name: "Daisy UI", icon: <FaCss3 /> },
   { name: "AWS", icon: <FaAws /> },
+  { name: "Linux", icon: <FaLinux /> },
+  { name: "Postgresql", icon: <DiPostgresql /> },
   { name: "Figma", icon: <FaFigma /> },
   { name: "Cloudinary", icon: <SiCloudinary /> },
-  // { name: "Git" , icon : <FaGit />},
 
 ];
