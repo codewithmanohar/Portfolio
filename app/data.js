@@ -27,6 +27,7 @@ import nptel from "../public/certificate1.jpg"
 import chatgpt from "../public/certificate2.jpg"
 import infosys_certificate from "../public/certificate_infosys.jpg"
 import uptoskills from "../public/certificate_uptoskills.jpg"
+import asyncotel from "../public/asyncotel_logo.webp"
 
 export const imgs = {
   profile,
@@ -35,8 +36,14 @@ export const imgs = {
 
 export const experiences = [
   {
+    logo: asyncotel,
+    title: "Full Stack Developer Intern",
+    company: "Asyncotel (J. Ruupshilaa Pvt. Ltd)",
+    duration: "Dec 2025 – Present",
+  },
+  {
     logo: infosys,
-    title: "Full Stack Intern",
+    title: "Web Developer Intern",
     company: "Infosys Springboard",
     duration: "Aug 2025 – Oct 2025",
     link: infosys_certificate
@@ -82,7 +89,7 @@ export const projects = [
     description:
       "A full-stack web platform enabling citizens to report issues, submit feedback, and interact with local authorities seamlessly.",
     techStack: ["React","jspdf", "MongoDB", "Express.js", "chart.js",  "framer motion","nodemailer"],
-    website: "https://civixs.vercel.app/",
+    website: "https://civix.mkstack.in/",
     code: "https://github.com/codewithmanohar/Civix-Citizen-Engagement-Dashboard",
     icon: civic_logo
   },

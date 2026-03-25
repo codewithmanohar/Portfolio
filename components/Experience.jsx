@@ -27,7 +27,8 @@ export const Experience = () => {
                                 />
                             </div>
                             <CardContent className="flex relative items-start sm:justify-between w-full flex-col sm:flex-row gap-0 sm:gap-4 p-0  sm:text-lg text-sm">
-                                 <div className=' absolute  sm:top-8 top-9  right-0'>
+                               
+                                 <div className={` absolute  sm:top-8 top-9  right-0 ${exp.link ? "" : "hidden"}`}>
                                         <ViewCertificate certificate={exp.link} />
                                     </div>
 

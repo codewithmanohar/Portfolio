@@ -1,26 +1,29 @@
 import nodemailer from "nodemailer";
 
 export async function GET() {
-    return new Response("Contact API is running");
+  return new Response("Contact API is running");
 }
 
 export async function POST(req) {
-    try {
-        const { email, message } = await req.json();
+  try {
+    const { email, message } = await req.json();
 
-        // Create transporter
-        const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 465,
-            secure: false, // true for 465, false for other ports
-            auth: {
-                user: process.env.USER_EMAIL,
-                pass: process.env.USER_PASS,
-            },
-        });
+    console.log(process.env.USER_EMAIL);
+    console.log(process.env.USER_PASS);
+
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: process.env.USER_EMAIL,
+        pass: process.env.USER_PASS,
+      },
+    });
 
 
-        const htmlTemplate = `
+    const htmlTemplate = `
     <!DOCTYPE html>
     <html>
     <body style="font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px;">
@@ -56,19 +59,19 @@ export async function POST(req) {
     </body>
     </html>
     `;
-        // Email details
-        await transporter.sendMail({
-            from: email,
-            to: process.env.USER_EMAIL,
-            subject: `New Contact Message from Portfolio`,
-            text: message,
-            html:htmlTemplate,
-        });
+    // Email details
+    await transporter.sendMail({
+      from: email,
+      to: process.env.USER_EMAIL,
+      subject: `New Contact Message from Portfolio`,
+      text: message,
+      html: htmlTemplate,
+    });
 
-        return new Response(JSON.stringify({ success: true }), { status: 200 });
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
 
-    } catch (error) {
-        console.log(error);
-        return new Response(JSON.stringify({ error: "Something went wrong" }), { status: 500 });
-    }
+  } catch (error) {
+    console.log(error);
+    return new Response(JSON.stringify({ error: "Something went wrong" }), { status: 500 });
+  }
 }
