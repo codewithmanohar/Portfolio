@@ -22,7 +22,7 @@ import uptoskills_logo from "../public/uptoskills_logo.jpeg";
 import profile from "../public/profile.webp";
 import cookify_logo from "../public/cookify.png"
 import nptel_logo from "../public/nptel_logo.png"
-import letUpgrade from "../public/lets_upgrade.png" 
+import letUpgrade from "../public/lets_upgrade.png"
 import nptel from "../public/certificate1.jpg"
 import chatgpt from "../public/certificate2.jpg"
 import infosys_certificate from "../public/certificate_infosys.jpg"
@@ -79,19 +79,21 @@ export const projects = [
     title: "Cookify – AI Recipe Generator ",
     description:
       "Cookify is an AI-powered recipe generator built with Next.js that creates personalized recipes based on ingredients and preferences.",
-    techStack: ["React", "Next.js", "MongoDB", "Genmini", "Zustand","NextAuth", "Tailwind CSS"],
+    techStack: ["React", "Next.js", "MongoDB", "Genmini", "Zustand", "NextAuth", "Tailwind CSS"],
     website: "https://trycookify.vercel.app/",
     code: "https://github.com/codewithmanohar/cookify",
     icon: cookify_logo,
+    video : "1S8Xo4qSg201fHqJlwKZ5Bf98zllcou4x"
   },
-    {
+  {
     title: "Civix – Citizen Engagement ",
     description:
       "A full-stack web platform enabling citizens to report issues, submit feedback, and interact with local authorities seamlessly.",
-    techStack: ["React","jspdf", "MongoDB", "Express.js", "chart.js",  "framer motion","nodemailer"],
+    techStack: ["React", "jspdf", "MongoDB", "Express.js", "chart.js", "framer motion", "nodemailer"],
     website: "https://civix.mkstack.in/",
     code: "https://github.com/codewithmanohar/Civix-Citizen-Engagement-Dashboard",
-    icon: civic_logo
+    icon: civic_logo,
+    video: "14AkwWNgrvMn77GLbgj0ee53902jpbNzJ"
   },
   {
     title: "ChatFlow – Chat Application",
@@ -100,7 +102,8 @@ export const projects = [
     techStack: ["React", "Daisy UI", "Node.js", "Socket.io", "Express.js", "MongoDB", "Cloudinary"],
     website: "https://trychatflow.vercel.app",
     code: "https://github.com/codewithmanohar/ChatFlow",
-    icon: chat_logo
+    icon: chat_logo,
+    video: "1JLMFqNQ44anWeOGEhl0-wJuV2esufhMB"
   },
   {
     title: "QuizForge – AI Quiz Generator",
@@ -109,7 +112,8 @@ export const projects = [
     techStack: ["React", "Google Gemini", "Tailwind CSS", "Node.js", "Express.js",],
     website: "https://ai-quizforge.vercel.app/",
     code: "https://github.com/codewithmanohar/QuizForge",
-    icon: ai_quiz
+    icon: ai_quiz,
+    video : "1qA-OG6NniLb58W250zErS5horKkfVJkK"
   },
   {
     title: "CodeSense – AI Code Reviewer",
@@ -148,3 +152,5 @@ export const skills = [
   { name: "Cloudinary", icon: <SiCloudinary /> },
 
 ];
+
+
