@@ -17,18 +17,19 @@ export function ViewCertificate({ certificate }) {
         </button>
       </DialogTrigger>
 
-      <DialogContent className="sm:max-w-[600px]">
+      <DialogContent className="sm:max-w-[800px] w-[95vw]">
         <DialogHeader>
           <DialogTitle>Certificate</DialogTitle>
         </DialogHeader>
 
-        <Image
-          src={certificate}   
-          width={600}
-          height={400}        
-          alt="certificate"
-          className="rounded-md"
-        />
+        <div className="relative w-full h-[400px] sm:h-[600px]">
+          <Image
+            src={certificate}   
+            fill
+            alt="certificate"
+            className="rounded-md object-contain"
+          />
+        </div>
       </DialogContent>
     </Dialog>
   )

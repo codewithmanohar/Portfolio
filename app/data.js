@@ -28,6 +28,9 @@ import chatgpt from "../public/certificate2.jpg"
 import infosys_certificate from "../public/certificate_infosys.jpg"
 import uptoskills from "../public/certificate_uptoskills.jpg"
 import asyncotel from "../public/asyncotel_logo.webp"
+import asyncotel_certificate from "../public/asyncotel_certificate.webp"
+import aa100xtech_logo from "../public/aa100xtech_logo.jpg"
+
 
 export const imgs = {
   profile,
@@ -35,11 +38,18 @@ export const imgs = {
 }
 
 export const experiences = [
+   {
+    logo: aa100xtech_logo,
+    title: "Software Developer",
+    company: "Absolute Advancement 100x Tech Private Limited",
+    duration: "Sept 2026 – Present",
+  },
   {
     logo: asyncotel,
     title: "Full Stack Developer Intern",
     company: "Asyncotel (J. Ruupshilaa Pvt. Ltd)",
-    duration: "Dec 2025 – Present",
+    duration: "Dec 2025 – June 2026",
+    link: asyncotel_certificate
   },
   {
     logo: infosys,
@@ -83,7 +93,7 @@ export const projects = [
     website: "https://trycookify.vercel.app/",
     code: "https://github.com/codewithmanohar/cookify",
     icon: cookify_logo,
-    video : "1S8Xo4qSg201fHqJlwKZ5Bf98zllcou4x"
+    video: "1S8Xo4qSg201fHqJlwKZ5Bf98zllcou4x"
   },
   {
     title: "Civix – Citizen Engagement ",
@@ -113,7 +123,7 @@ export const projects = [
     website: "https://ai-quizforge.vercel.app/",
     code: "https://github.com/codewithmanohar/QuizForge",
     icon: ai_quiz,
-    video : "1qA-OG6NniLb58W250zErS5horKkfVJkK"
+    video: "1qA-OG6NniLb58W250zErS5horKkfVJkK"
   },
   {
     title: "CodeSense – AI Code Reviewer",
