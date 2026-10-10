@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono, Poppins, Open_Sans , Bricolage_Grotesque, Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import VisitorTracker from "@/components/VisitorTracker";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +36,9 @@ export default function RootLayout({ children }) {
          enableSystem
          disableTransitionOnChange
         >
+          <Suspense fallback={null}>
+            <VisitorTracker />
+          </Suspense>
           {children}
         </ThemeProvider>
       </body>
